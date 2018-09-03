@@ -1,0 +1,40 @@
+{
+  "kind": "master",
+  "hostname": "k8s-master-01",
+  "vip": "192.168.0.10",
+  "nodes": [
+    {
+      "hostname": "k8s-master-01",
+      "ip": "192.168.0.11",
+      "version": "v1.10.7",
+      "status": "not-ready"
+    },
+    {
+      "hostname": "k8s-master-02",
+      "ip": "192.168.0.12",
+      "version": "v1.10.7",
+      "status": "ready"
+    }
+  ],
+    "etcdnodes": [
+    {
+      "hostname": "k8s-etcd-01",
+      "ip": "192.168.0.25",
+      "version": "v3.2.11",
+      "status": "not-ready"
+    },
+    {
+      "hostname": "k8s-etcd-02",
+      "ip": "192.168.0.26",
+      "version": "v3.2.11",
+      "status": "ready"
+    },
+    {
+      "hostname": "k8s-etcd-03",
+      "ip": "192.168.0.27",
+      "version": "v3.2.11",
+      "status": "ready"
+    }
+  ]
+}
+

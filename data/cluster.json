@@ -1,0 +1,111 @@
+{
+	"apiversion": "0.1/beta",
+	"cluster": [
+		{
+		"token": "",
+		"metadata": {
+			"revision": "2",
+			"creator-name": "Henrik Hoegh",
+			"creator-email": "heh@praqma.net",
+			"link": "http://intranet.praqma.net/kubernetes/clusters/build-production/",
+			"name": "Build Cluster - Production"
+		},
+		"items": [
+			{
+				"kind": "master",
+				"vip": "192.168.0.10",
+				"nodes": [{
+						"hostname": "k8s-master-01",
+						"ip": "192.168.0.11",
+						"version": "v1.10.7",
+						"status": "not-ready"
+					},
+					{
+						"hostname": "k8s-master-02",
+						"ip": "192.168.0.12",
+						"version": "v1.10.7",
+						"status": "ready"
+					}
+				]
+			},
+			{
+				"kind": "etcd",
+				"vip": "",
+				"nodes": [{
+						"hostname": "k8s-etcd-01",
+						"ip": "192.168.0.25",
+						"version": "v3.2.11",
+						"status": "not-ready"
+					},
+					{
+						"hostname": "k8s-etcd-02",
+						"ip": "192.168.0.26",
+						"version": "v3.2.11",
+						"status": "ready"
+					},
+					{
+						"hostname": "k8s-etcd-03",
+						"ip": "192.168.0.27",
+						"version": "v3.2.11",
+						"status": "ready"
+					}
+				]
+			},
+                        {
+                                "kind": "worker",
+				"vip": "",
+                                "nodes": [{
+                                                "hostname": "k8s-worker-01",
+                                                "ip": "192.168.0.35",
+                                                "version": "v1.10.7",
+                                                "status": "ready"
+                                        },
+                                        {
+                                                "hostname": "k8s-worker-02",
+                                                "ip": "192.168.0.36",
+                                                "version": "v1.10.7",
+                                                "status": "ready"
+                                        },
+                                        {
+                                                "hostname": "k8s-worker-03",
+                                                "ip": "192.168.0.37",
+                                                "version": "v1.10.7",
+                                                "status": "ready"
+                                        },
+                                        {
+                                                "hostname": "k8s-worker-04",
+                                                "ip": "192.168.0.38",
+                                                "version": "v1.10.7",
+                                                "status": "ready"
+                                        },
+                                        {
+                                                "hostname": "k8s-worker-05",
+                                                "ip": "192.168.0.39",
+                                                "version": "v1.10.7",
+                                                "status": "ready"
+                                        }
+
+                                ]
+                        },
+                        {
+                                "kind": "loadbalancer",
+                                "vip": "192.168.0.250",
+                                "nodes": [{
+                                                "hostname": "k8s-lb-01",
+                                                "ip": "192.168.0.251",
+                                                "version": "v1.6.6",
+                                                "status": "ready"
+                                        },
+                                        {
+                                                "hostname": "k8s-lb-02",
+                                                "ip": "192.168.0.252",
+                                                "version": "v1.6.6",
+                                                "status": "ready"
+                                        }
+                                ]
+                        }
+
+
+		]
+	}]
+}

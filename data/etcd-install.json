@@ -1,0 +1,26 @@
+{
+  "kind": "etcd",
+  "hostname": "k8s-etcd-01",
+  "virtual-ip": "",
+  "nodes": [
+    {
+      "hostname": "k8s-etcd-01",
+      "ip": "192.168.0.25",
+      "version": "v3.2.11",
+      "status": "not-ready"
+    },
+    {
+      "hostname": "k8s-etcd-02",
+      "ip": "192.168.0.26",
+      "version": "v3.2.11",
+      "status": "ready"
+    },
+    {
+      "hostname": "k8s-etcd-03",
+      "ip": "192.168.0.27",
+      "version": "v3.2.11",
+      "status": "ready"
+    }
+  ]
+}
+
